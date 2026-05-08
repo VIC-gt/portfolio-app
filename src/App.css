@@ -1,0 +1,200 @@
+/* ── Reset ── */
+*, *::before, *::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: 'Segoe UI', sans-serif;
+  background: #f5f5f5;
+  color: #1a1a1a;
+}
+
+/* ── Navbar ── */
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background: #1a1a1a;
+  padding: 1rem 2rem;
+}
+
+.nav-logo {
+  color: #a3e635;
+  font-size: 1.5rem;
+  font-weight: 700;
+}
+
+.nav-btn {
+  background: #a3e635;
+  color: #1a1a1a;
+  border: none;
+  padding: 8px 20px;
+  border-radius: 6px;
+  font-size: 14px;
+  font-weight: 600;
+  cursor: pointer;
+}
+
+.nav-btn:hover {
+  opacity: 0.85;
+}
+
+/* ── Main content ── */
+.main-content {
+  max-width: 960px;
+  margin: 0 auto;
+  padding: 2rem 1.5rem;
+}
+
+.hero-title {
+  font-size: 2.2rem;
+  font-weight: 700;
+  margin-bottom: 0.4rem;
+}
+
+.hero-sub {
+  color: #666;
+  margin-bottom: 1.5rem;
+}
+
+/* ── Search bar ── */
+.search-bar {
+  width: 100%;
+  padding: 10px 16px;
+  font-size: 15px;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  margin-bottom: 2rem;
+  outline: none;
+}
+
+.search-bar:focus {
+  border-color: #a3e635;
+}
+
+.no-results {
+  color: #888;
+  text-align: center;
+  padding: 2rem;
+}
+
+/* ── Project grid ── */
+.projects-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(260px, 1fr));
+  gap: 1.2rem;
+}
+
+/* ── Project card ── */
+.card {
+  background: #fff;
+  border: 1px solid #e5e5e5;
+  border-radius: 12px;
+  padding: 1.2rem 1.4rem;
+  transition: transform 0.2s, border-color 0.2s;
+}
+
+.card:hover {
+  transform: translateY(-4px);
+  border-color: #a3e635;
+}
+
+.card-category {
+  font-size: 11px;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0.07em;
+  color: #888;
+  margin-bottom: 0.4rem;
+}
+
+.card-title {
+  font-size: 1.15rem;
+  font-weight: 700;
+  margin-bottom: 0.5rem;
+}
+
+.card-description {
+  font-size: 14px;
+  color: #555;
+  line-height: 1.55;
+  margin-bottom: 0.8rem;
+}
+
+.card-tech {
+  font-size: 13px;
+  color: #888;
+}
+
+/* ── Add project form ── */
+.add-form {
+  background: #fff;
+  border: 1px solid #e5e5e5;
+  border-radius: 12px;
+  padding: 1.5rem 1.8rem;
+  margin-bottom: 2rem;
+}
+
+.add-form h2 {
+  font-size: 1.2rem;
+  margin-bottom: 1rem;
+}
+
+.add-form label {
+  display: block;
+  font-size: 12px;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0.06em;
+  color: #888;
+  margin-bottom: 4px;
+  margin-top: 12px;
+}
+
+.add-form input,
+.add-form textarea,
+.add-form select {
+  width: 100%;
+  padding: 9px 12px;
+  border: 1px solid #ddd;
+  border-radius: 7px;
+  font-size: 14px;
+  font-family: inherit;
+  outline: none;
+}
+
+.add-form input:focus,
+.add-form textarea:focus,
+.add-form select:focus {
+  border-color: #a3e635;
+}
+
+.add-form textarea {
+  resize: vertical;
+  min-height: 80px;
+}
+
+.form-error {
+  color: #e24b4a;
+  font-size: 13px;
+  margin-bottom: 8px;
+}
+
+.submit-btn {
+  margin-top: 1.2rem;
+  width: 100%;
+  background: #1a1a1a;
+  color: #fff;
+  border: none;
+  padding: 11px;
+  border-radius: 8px;
+  font-size: 14px;
+  font-weight: 600;
+  cursor: pointer;
+}
+
+.submit-btn:hover {
+  background: #333;
+}
